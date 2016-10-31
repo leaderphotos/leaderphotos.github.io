@@ -8,3 +8,6 @@ Leader Photos Read Me
 ================================================================================
 
 The challenge: Can we display Nigel's photos in 3D in some innovative manner?
+
+You can click on the `albums` icon just above and page through all of Nigel's photos one by one
+ - using GitHub's wonderful show-the-data capabilities.
