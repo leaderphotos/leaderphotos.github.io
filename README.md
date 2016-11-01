@@ -7,7 +7,12 @@ value='You are now in a GitHub Pages view. Click here to view README file in Git
 Leader Photos Read Me
 ================================================================================
 
-The challenge: Can we display Nigel's photos in 3D in some innovative manner?
+Nigel's photos from his old-timey [Menalto Gallery]( http://galleryproject.org/ ) app now on GitHub.
 
-You can click on the `albums` icon just above and page through all of Nigel's photos one by one
- - using GitHub's wonderful show-the-data capabilities.
+You can click on the `albums` icon just above and page through all of Nigel's snaps one by one - using GitHub's wonderful show-the-data capabilities.
+
+Or you can play with yet another photo grid gallery: [Albums]( ./albums/index.html )
+
+The challenge:
+
+Can we display what Nigel has seen in 3D in some innovative manner?
