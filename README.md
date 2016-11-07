@@ -20,7 +20,7 @@ The challenge:
 Can we display what Nigel has seen in 3D in some innovative manner?
 
 
-### Copyright
+### Copyrights & Licenses
 
 All photos: copyright &copy; Nigel Dickenson. All rights reserved.
 
