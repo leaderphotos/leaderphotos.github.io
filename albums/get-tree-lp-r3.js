@@ -2,11 +2,7 @@
 
 	var TRE = TRE || {};
 
-	TRE.extension = '.html';
-
-
 // MENUS Full version
-
 
 	TRE.getMenuDetailsTableOfContents = function() {
 

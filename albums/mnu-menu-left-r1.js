@@ -31,11 +31,11 @@
 		MNU.contents.innerHTML =
 			'<div >' +
 				'<h1>Albums</h1>' +
+                '<p>What are you waiting for? Click on the albums to the left.</p>' +
+                '<p>2016-11-06 ~ R2 ~ making progress</p>' +
                 '<p>2016-10-31 ~ Still pre-release / very alpha stage</p>' +
-                '<p>Album folders have been flattened. No folders inside folders. This will be fixed.</p>' +
-                '<p>So some albums appear to be empty</p>' +
 			'</div>' +
-
+        '',
 
 
 		MNU.onLeftMenuLoaded();
