@@ -2,46 +2,44 @@
 <html lang=en >
 <head>
 <meta charset=utf-8 >
-<title>Leader Photos R1</title>
+<title>Get Tree LP R3</title>
 <meta name=viewport content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no' >
-<meta name=description content='Leader Photos
+<meta name=description content='
 ' >
 <meta name=keywords content='Jaanga,GitHub API,CSS,HTML,JavaScript,GitHub,FOSS' >
-<meta name=date content='2016-10-31' >
+<meta name=date content='2016-09-13' >
 </head>
 <body>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.3/showdown.min.js ></script>
-<!--
-<script src=../../core1/0-def-defaults/defaults-r1.js ></script>
-<script src=../../core1/0-cor-core/core-r2.js ></script>
-<script src=../../core1/mnu-menu-left/mnu-menu-left-r1.js ></script>
-<script src=../../core1/get-files/get-files-r3.js ></script>
--->
-<script src=https://jaanga.github.io/cookbook-html/templates/core1/0-def-defaults/defaults-r1.js ></script>
-<script src=https://jaanga.github.io/cookbook-html/templates/core1/0-cor-core/core-r2.js ></script>
-<script src=https://jaanga.github.io/cookbook-html/templates/core1/mnu-menu-left/mnu-menu-left-r1.js ></script>
-<script src=https://jaanga.github.io/cookbook-html/templates/core1/get-files/get-files-r3.js ></script>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.4/showdown.min.js ></script>
+
+<script src=defaults-r1.js ></script>
+<script src=core-r2.js ></script>
+<script src=mnu-menu-left-r1.js ></script>
+
+<script src=get-tree-lp-r3.js ></script>
 <script>
 
 	DEF.user = 'leaderphotos';
 	DEF.repo = 'leaderphotos.github.io';
 	DEF.branch = 'master';
 	DEF.searchInFolder = 'albums/';
-	DEF.defaultFile	= '../README.md';
+	DEF.defaultFile	= '../README.md'; // if no default, select a random file
 
 	DEF.urlGITHubAPITreeContents = 'https://api.github.com/repos/' + DEF.user + '/' + DEF.repo + '/git/trees/' + DEF.branch + '?recursive=1';
+
+	DEF.urlBase = 'https://github.com/' + DEF.user + '/' + DEF.repo + DEF.searchInFolder;
+
 	DEF.urlGHPages = 'https://' + DEF.user + '.github.io/';
+
+	TRE.extension = '.lock';
 
 	init();
 
 	function init() {
 
-		MNU.taglineHeader = 'A hard core howdy!' + b;
-
+//		COR.taglineHeader = 'A leader photo howdy!' + b;
 
 		MNU.initLeftMenu();
-
-		MNU.css.innerHTML += '.CORmenuBreadCrumbs {display: none; }';
 
 		MNU.menu.innerHTML =
 
@@ -49,9 +47,7 @@
 
 			COR.getMenuBreadCrumbs() +
 
-			GET.getMenuDetailsTableOfContents() +
-
-//			GET.getMenuDetailsPageActions() +
+			TRE.getMenuDetailsTableOfContents() +
 
 			COR.getMenuDetailsAbout() +
 
@@ -61,9 +57,7 @@
 
 		window.addEventListener ( 'hashchange', onHashChange, false );
 
-		GETmenuToCSummary.innerHTML = 'Albums';
-
-		GET.getGitHubRepoTreeContents(); // calls onHashChange();
+		TRE.getGitHubRepoTreeContents(); // calls onHashChange();
 
 	}
 
@@ -74,27 +68,21 @@
 
 		item = location.hash ? location.hash.slice( 1 ) : DEF.searchInFolder;
 
-		if ( item.endsWith( '.md' ) === true ) {
+		COR.setMenuBreadCrumbs( item );
 
-			COR.setMenuBreadCrumbs( DEF.searchInFolder );
+		TRE.getFilesFromFolder( item );
 
-		} else if ( item.endsWith( '.html' ) === true ) {
+/*
+		MNU.contents.innerHTML =
 
-			COR.setMenuBreadCrumbs( DEF.searchInFolder );
+			'<h1>' + COR.title + '</h1>' +
 
-		} else {
+			'Item: ' + item + b + b +
 
-console.log( 'item', item );
+		//	'<iframe src="' + DEF.urlGHPages + item + '" width=800 height=500 ></iframe>' +
 
-			COR.setMenuBreadCrumbs( item );
-
-			CORmenuRepo.style.display = 'none';
-
-			GET.getFilesFromFolder( item );
-
-//			MNU.contents.innerHTML = item; // COR.converter.makeHtml( xhr.target.responseText );
-
-		}
+		b;
+*/
 
 	}
 
