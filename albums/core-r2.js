@@ -59,7 +59,7 @@
 
 			'<h3 class=>' +
 				'<a href=http://' + DEF.user + '.github.io title="' + DEF.user + ' - ' + DEF.titleTagline + '" >' + DEF.logo + ' ' + DEF.user + '</a> &raquo; ' +
-				'<div id=CORmenuRepo ><a href="" >' + DEF.repo + '</a> &raquo; </div>' +
+//				'<div id=CORmenuRepo ><a href="" >' + DEF.repo + '</a> &raquo; </div>' +
 			'</h3>';
 
 		} else {
