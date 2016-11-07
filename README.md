@@ -18,3 +18,10 @@ You can play with yet another photo grid gallery: [Albums]( https://leaderphotos
 The challenge:
 
 Can we display what Nigel has seen in 3D in some innovative manner?
+
+
+### Copyright
+
+All photos: copyright &copy; Nigel Dickenson. All rights reserved.
+
+Web pages and code: copyright &copy; Leader Photos authors. MIT License.
