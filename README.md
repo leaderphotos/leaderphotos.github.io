@@ -22,6 +22,6 @@ Can we display what Nigel has seen in 3D in some innovative manner?
 
 ### Copyrights & Licenses
 
-All photos: copyright &copy; Nigel Dickenson. All rights reserved.
+All photos: copyright &copy; Nigel Dickinson. All rights reserved.
 
 Web pages and code: copyright &copy; Leader Photos authors. MIT License.
