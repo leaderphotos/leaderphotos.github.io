@@ -11,7 +11,7 @@ Leader Photos Read Me
 
 <span style=display:none; >You can click on the `albums` icon just above and page through all of Nigel's snaps one by one - using GitHub's wonderful show-the-data capabilities.</span>
 
-You can play with yet another photo grid gallery - just click the titles on the menu on the left
+You can play with yet another photo grid gallery: [Albums]( https://leaderphotos.github.io/ )
 
 ***
 
