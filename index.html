@@ -14,8 +14,8 @@
 
 // https://github.com/jaanga/jaanga.github.io/tree/master/cookbook-html/templates/open-index-or-markdown
 
-	var defaultFile = 'index.html';
-	location.hash = 'README.md';
+	var defaultFile = 'tootoo/r2/tootoo-r2-leader-photos.html';
+//	location.hash = 'README.md';
 
 	var contents;
 
@@ -55,6 +55,7 @@
 		url = location.hash.slice( 1 );
 
 		xhr = new XMLHttpRequest();
+		xhr.crossOrigin = 'anonymous'; 
 		xhr.open( 'get', url, true );
 		xhr.onload = function() { contents.innerHTML = converter.makeHtml( xhr.responseText ); };
 		xhr.send( null );
