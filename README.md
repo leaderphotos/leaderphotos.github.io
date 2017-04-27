@@ -1,6 +1,4 @@
 <span style=display:none; >[You are now in GitHub source code view. Click here to view README file in GitHub Pages view]( https://leaderphotos.github.io/ "View file as a web page." ) </span>
-<div><input type=button onclick=window.location.href='https://github.com/leaderphotos/leaderphotos.github.io';
-value='You are now in a GitHub Pages view. Click here to view README file in GitHub source code view.' ></div>
 
 
 Leader Photos Read Me
